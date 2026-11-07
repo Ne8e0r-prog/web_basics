@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатнора Робота №4</title>
+  </head>
+  <body>
+    <h1>Моя перша HTML форма</h1>
+      <form action="https://httpbin.org/post" method="POST">
+        <div>
+          <label for="user-text">Ім'я</label>
+          <input type="text" id="user-text" name="text-name">
+            <br><br>
+        </div>
+        <div>
+            <label for="user-date">Дата народження</label>
+            <input type="date" id="user-date" name="user-date">
+             <br><br>
+        </div>
+        <div>
+            <label for="user-email">Імейл</label>
+            <input type+="email" id="user-email" name="email">
+             <br><br>
+        </div>
+        <div>
+            <label for="user-message">Повідомлення:</label>
+            <textarea id="user-message" name="message"></textarea>
+        </div>
+        <div>
+             <br><br>
+          <button type="submit" name=>Надіслати</button>
+          <button type="reset">Очистити</button>
+        </div>
+          <br><br>
+        <fieldset>
+          <legend>Ваші улюблені напої</legend>
+            <input type="checkbox" id="drink_coffee" name="drink" value="coffee">
+            <label for="drink_coffee">Кава</label><br>
+          <input type="checkbox" id="drink_tea" name="drink" value="tea">
+            <label for="drink_tea">Чай</label><br>
+          <input type="checkbox" id="drink_juice" name="drink" value="juice">
+            <label for="drink_juice">Сік</label><br>
+          <input type="checkbox" id="drink_water" name="drink" value="water">
+            <label for="drink_water">Вода</label><br>
+        </fieldset>
+        <br>
+          <fieldset>
+          <legend>Моя національність</legend>
+            <input type="radio" id="nat_ua" name="nationality" value="ukrainian">
+            <label for="drink_coffee">Українець/-ка</label><br>
+          <input type="radio" id="nat_pl" name="nationality" value="pole">
+            <label for="drink_tea">Поляк/Полька</label><br>
+          <input type="radio" id="nat_other" name="nationality" value="other">
+            <label for="drink_juice">Інша</label><br>
+        </fieldset>
+      </form>
+    <br><br>
+    <picture>
+    <scource media="(max-width: 468px)" srcset="https://picsum.photos/seed/picsum/200/300"></scource>
+    <img src="https://picsum.photos/seed/picsum/200/300" alt="Адаптивне зображення">
+    </picture>
+    <script src="./script.js"></script>
+  </body>
+</html>
